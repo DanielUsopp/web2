@@ -1,0 +1,127 @@
+/* Estilo general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #3b5998);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #333;
+}
+
+/* Contenedor principal del formulario */
+.form-container {
+    background: #3b5998;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animación de entrada suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #131313;
+}
+
+p {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Etiquetas */
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    color: #444;
+}
+
+/* Inputs y selects */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #3b5998;
+    box-shadow: 0 0 4px #3b5998;
+}
+
+/* Radio y checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.radio-group,
+.checkbox-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Botones */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #3b5998;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3b5998;
+}
+
+/* Botón secundario */
+button.secondary {
+    background-color: #ccc;
+    color: #333;
+}
+
+button.secondary:hover {
+    background-color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+    }
+}

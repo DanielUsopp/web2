@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de inscripción de Familiares</title>
+    <link rel="stylesheet" href="formulario.css">
+
+</head>
+<body>
+
+    <h1>Formulario de inscripción de Familiares</h1>
+
+    <p>Inscriba aquí a los Familiares</p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required maxlength="50"><br><br>
+
+        <label for="segundoNombre">Segundo Nombre:</label>
+        <input type="text" id="segundoNombre" name="segundoNombre" maxlength="50"><br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required maxlength="50"><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required min="1" max="100"><br><br>
+
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+
+        <label for="celular">Celular:</label>
+        <input type="tel" id="celular" name="celular" required pattern="[0-9]{10}"><br><br>
+
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" name="foto" accept="image/*"><br><br>
+
+        <label>Sexo:</label><br>
+        <input type="radio" id="masculino" name="sexo" value="masculino" required>
+        <label for="masculino">Masculino</label><br>
+
+        <input type="radio" id="femenino" name="sexo" value="femenino">
+        <label for="femenino">Femenino</label><br>
+
+        <input type="radio" id="otro" name="sexo" value="otro">
+        <label for="otro">Otro</label><br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required maxlength="50"><br><br>
+
+        <label for="relacion">Relación con usted:</label>
+        <select id="relacion" name="relacion" required>
+            <option value="padre">Padre</option>
+            <option value="madre">Madre</option>
+            <option value="hermano">Hermano</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+
+        <label>Intereses:</label><br>
+        <input type="checkbox" id="deportes" name="intereses" value="deportes">
+        <label for="deportes">Deportes</label><br>
+
+        <input type="checkbox" id="lectura" name="intereses" value="lectura">
+        <label for="lectura">Lectura</label><br>
+
+        <input type="checkbox" id="Jugar" name="intereses" value="lectura">
+        <label for="Jugar">Jugar</label><br>
+
+        <input type="checkbox" id="Ver television" name="intereses" value="lectura">
+        <label for="Ver television">Ver television</label><br><br>
+
+        
+        <section>
+            <button type="submit">Registrar</button><br><br>
+            <button onclick="window.location.href='HojaVida.html'">
+                Regresar a la Hoja de Vida Principal
+        </section>
+    </form>
+
+</body>
+</html>
